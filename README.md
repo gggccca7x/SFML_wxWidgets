@@ -79,3 +79,9 @@ Locate the <ApplicationLocation>\sfml\bin folder in the folder system. Copy open
 Download the .h and .cpp files provided in the repository, and include them to the project's Header and Source Files folders respectively.
   
 ![](https://github.com/gggccca7x/SFML_wxWidgets/blob/main/readme_images/files.PNG) 
+
+### Final Solution
+
+Run the Application, ensure you are running x64 and not x86. Click the "Click Me" button, and you should see the SFML code draw a blue circle.
+  
+![](https://github.com/gggccca7x/SFML_wxWidgets/blob/main/readme_images/final_solution.PNG) 
