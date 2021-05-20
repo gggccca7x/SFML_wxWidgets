@@ -16,9 +16,8 @@ A project on how I set up a 64bit wxWidgets application where you can embed an S
 1. Build wxWidgets from source
 2. Create windows desktop application
 3. Add wxWidgets lib
-4. Create wxWidget application
-5. Add SFML lib
-6. Create custom wxWidget
+4. Add SFML lib
+5. Add code and create custom wxWidget (ALl provided)
 
 ### Prerequisits
 * Download and Install Visual Studio, SFML and wxWidgets
@@ -26,6 +25,33 @@ A project on how I set up a 64bit wxWidgets application where you can embed an S
 ### 1. Build wxWidgets from source
 Process can be found on "javidx9"'s youtube video
 Navigate in the folder system to (wxWidgets)\build\msw\wx_vc16.sln, and open it in Visual Studio.
+
 ![](https://github.com/gggccca7x/SFML_wxWidgets/blob/main/readme_images/wxWidFolder.PNG)
+
 In Visual Studio, navigate to Build -> Batch Build -> Select All -> Build
-Add environment variable
+
+![](https://github.com/gggccca7x/SFML_wxWidgets/blob/main/readme_images/build_wxwid.PNG)
+
+Add environment variable for wxWidget. System Properites -> Environment Variables -> New (system variable) -> Name: WXWIN Value: Filepath
+
+![](https://github.com/gggccca7x/SFML_wxWidgets/blob/main/readme_images/environment_variable.PNG)
+
+### 2. Create windows desktop application
+
+Open new instance of Visual Studio and create a windows desktop application
+
+![](https://github.com/gggccca7x/SFML_wxWidgets/blob/main/readme_images/windows_application.PNG)
+
+Delete everything in the Header/Resource/Source Folders
+
+![](https://github.com/gggccca7x/SFML_wxWidgets/blob/main/readme_images/delete_files.PNG)
+
+### 3. Add wxWidgets lib
+
+Right click Applicaton name in Solution explorer -> Properties. At the top, ensure Configuration is set to "All Configurations", and the Platform is "Win64".
+Under C/C++ -> General section, set Additional Include Directories: $(WXWIN)\include;$(WXWIN)\include\msvc;
+In the Linker options, Additional Library Directories: $(WXWIN)\lib\vc_lib
+
+
+### 4. Add SFML lib
+
