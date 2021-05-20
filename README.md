@@ -26,6 +26,6 @@ A project on how I set up a 64bit wxWidgets application where you can embed an S
 ### 1. Build wxWidgets from source
 Process can be found on "javidx9"'s youtube video
 Navigate in the folder system to (wxWidgets)\build\msw\wx_vc16.sln, and open it in Visual Studio.
-![]()
+![](https://github.com/gggccca7x/SFML_wxWidgets/blob/main/readme_images/wxWidFolder.PNG)
 In Visual Studio, navigate to Build -> Batch Build -> Select All -> Build
 Add environment variable
