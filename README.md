@@ -48,9 +48,9 @@ Delete everything in the Header/Resource/Source Folders
 
 ### 3. Add wxWidgets lib
 
-Right click Applicaton name in Solution explorer -> Properties. At the top, ensure Configuration is set to "All Configurations", and the Platform is "x64".
-Under C/C++ -> General section, set Additional Include Directories: $(WXWIN)\include;$(WXWIN)\include\msvc;
-In the Linker options, Additional Library Directories: $(WXWIN)\lib\vc_lib
+* Right click Applicaton name in Solution explorer -> Properties. At the top, ensure Configuration is set to "All Configurations", and the Platform is "x64".
+* Under C/C++ -> General section, set Additional Include Directories: $(WXWIN)\include;$(WXWIN)\include\msvc;
+* In the Linker options, Additional Library Directories: $(WXWIN)\lib\vc_lib
 
 ![](https://github.com/gggccca7x/SFML_wxWidgets/blob/main/readme_images/wx_win_settings.PNG)
 
@@ -62,11 +62,11 @@ Put SFML's bin, include and lib folders into <Application>\sfml folder.
 
 Note: This can all be found in the SFML tutorial video linked above.
   
-Back in properties, right click application name in Solution explorer -> Properties. Ensure again it's for All configurations and x64.
-In the Linker general options, Additional Library Directories: <Application Location>\SFML_wxWidgets_Integration\sfml\lib e.g. D:\repos\SFML_wxWidgets_Integration\sfml\lib
-In Linker tab, open Input section. With "Debug" selected, set Additional Dependencies: sfml-system-d.lib;sfml-graphics-d.lib;sfml-audio-d.lib;sfml-network-d.lib;sfml-window-d.lib;%(AdditionalDependencies)
-Then change debug to "Release" set Additional Dependencies: sfml-system.lib;sfml-graphics.lib;sfml-audio.lib;sfml-network.lib;sfml-window.lib;%(AdditionalDependencies)
-In the C/C++ General section, add to the Additional Include Directories: <Application Location>\sfml\include e.g. D:\repos\SFML_wxWidgets_Integration\sfml\include. Note: Make sure it's for All Configurations and do not delete the WXWIN includes.
+* Back in properties, right click application name in Solution explorer -> Properties. Ensure again it's for All configurations and x64.
+* In the Linker general options, Additional Library Directories: <Application Location>\SFML_wxWidgets_Integration\sfml\lib e.g. D:\repos\SFML_wxWidgets_Integration\sfml\lib
+* In Linker tab, open Input section. With "Debug" selected, set Additional Dependencies: sfml-system-d.lib;sfml-graphics-d.lib;sfml-audio-d.lib;sfml-network-d.lib;sfml-window-d.lib;%(AdditionalDependencies)
+* Then change debug to "Release" set Additional Dependencies: sfml-system.lib;sfml-graphics.lib;sfml-audio.lib;sfml-network.lib;sfml-window.lib;%(AdditionalDependencies)
+* In the C/C++ General section, add to the Additional Include Directories: <Application Location>\sfml\include e.g. D:\repos\SFML_wxWidgets_Integration\sfml\include. Note: Make sure it's for All Configurations and do not delete the WXWIN includes.
 
 ![](https://github.com/gggccca7x/SFML_wxWidgets/blob/main/readme_images/sfml_includes.PNG)
 
@@ -74,7 +74,7 @@ Locate the <ApplicationLocation>\sfml\bin folder in the folder system. Copy open
   
 ![](https://github.com/gggccca7x/SFML_wxWidgets/blob/main/readme_images/debug_folder.PNG)
   
-### 5. Add code and create custom wxWidget (ALl provided)
+### 5. Add code and create custom wxWidget (All provided)
   
 Download the .h and .cpp files provided in the repository, and include them to the project's Header and Source Files folders respectively.
   
