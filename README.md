@@ -17,7 +17,7 @@ A project on how I set up a 64bit wxWidgets application where you can embed an S
 2. Create windows desktop application
 3. Add wxWidgets lib
 4. Add SFML lib
-5. Add code and create custom wxWidget (ALl provided)
+5. Add code and create custom wxWidget (Code in project)
 
 ### Prerequisits
 * Download and Install Visual Studio, SFML and wxWidgets
